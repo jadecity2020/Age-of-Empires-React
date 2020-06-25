@@ -11,20 +11,29 @@ For this project, I plan to make a multiple-choice trivia game. I will use React
 
 ## API
 
-https://opentdb.com/api.php?amount=10
+https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations
 
 
 ```
 {
-"category": "Entertainment: Music",
-"type": "multiple",
-"difficulty": "medium",
-"question": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
-"correct_answer": "Hurt",
-"incorrect_answers": [
-"Closer",
-"A Warm Place",
-"Big Man with a Gun"
+"civilizations": [
+{
+"id": 1,
+"name": "Aztecs",
+"expansion": "The Conquerors",
+"army_type": "Infantry and Monk",
+"unique_unit": [
+"https://age-of-empires-2-api.herokuapp.com/api/v1/unit/jaguar_warrior"
+],
+"unique_tech": [
+"https://age-of-empires-2-api.herokuapp.com/api/v1/technology/garland_wars"
+],
+"team_bonus": "Relics generate +33% gold",
+"civilization_bonus": [
+"Villagers carry +5",
+"Military units created 15% faster",
+"+5 Monk hit points for each Monastery technology",
+"Loom free"
 ]
 },
 ```
@@ -32,33 +41,27 @@ https://opentdb.com/api.php?amount=10
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [wireframes](https://wireframepro.mockflow.com/view/green-proj2-wireframe)
-- [react architecture](https://sitemap.mockflow.com/view/green-proj2-architecture)
 
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP EXAMPLE
-- Fully functional, interactive, trivia game
-	- Questions/possible answers populated by API call
-	- Tells player if selected answer is correct
-	- Keeps track of score
+- Detailed Introduction on the game "Age of Empires II" 
 - Navbar with options that link to their corresponding pages
-- Options page that allows player to select trivia theme/difficulty
-- Instructions page
+- Implementing at least 10 civilizations (out of a total of 18)
+- Application of API calls on the corresponding pages
+
 
 #### PostMVP EXAMPLE
 
-- Leaderboard that is updated using Firebase
-- Create multiple leaderboards depending on selected difficulty
+- Implement all 18 civilizations
+
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
-
+Haven't edit this portion but left here as reference
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
 | Component | Description | 
@@ -77,6 +80,8 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Leaderboard | Renders list of top scorers via API call |
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
+
+Havent edit but left as reference
 
 Unless otherwise noted, time is listed in hours:
 
@@ -106,36 +111,8 @@ Unless otherwise noted, time is listed in hours:
 | Total | H | 45 | 44 | 44 |
 
 ## Additional Libraries
-ReactStrap - responsive navbar, progress bar for game
-Firebase - updating and retrieving leaderboard
+
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code.
-
-The below code is how the leaderboard is populated. The shorter the name, the more dots are added between the name and score. The font size is set progressively smaller for each entry.
-
-```
-let fontSize = props.gameView ? 24 : 42
-
-scoreList = props.highScores.map((highScore, i) => {
-	let dots = ' . . . '   
-	for (let j = highScore.name.length; j < 12; j += 2) {
-		dots += '. '
-	}
-	if (i > 0) {
-		let mult = (i < 3 ? 2 : 1)
-		props.gameView ? fontSize -= 1 * mult : fontSize -= 3 * mult
-	}
-```
-...
-```
-	return (
-		<li style={{fontSize: `${fontSize}px`, color: color}} key={i}>
-			<span className="bold">{`${i + 1}) `}</span>
-			{highScore.name} {dots} {highScore.score}
-		</li>
-	) 
-})
-```
 
