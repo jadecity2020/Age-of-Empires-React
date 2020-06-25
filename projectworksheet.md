@@ -81,34 +81,21 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-Havent edit but left as reference
 
-Unless otherwise noted, time is listed in hours:
-
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Create React app and files for all components | H | 1 | 40min | 40min |
-| Basic Navbar & Footer | H | 1 | 45min | 45min |
-| Set up basic React routing | H | 1 | 30min | 30min |
-| Make trivia API call, parse important data | H | 2 | 1.5 | 1.5 |
-| Display questions and selectable answers, change on submit | H | 3 | 4 | 4 |
-| Create logic to test for correct answer | H | 1 | 35min | 35min |
-| Allow only one answer to be selected per question | H | 1 | 1 | 1 |
-| Keep track of score | H | 2 | 2 | 2 |
-| Style game display - basic | H | 2 | 3 | 3 |
-| Make game display dynamic | H | 1 | 1 | 1 |
-| Create game options form | H | 3 | 3 | 3 |
-| Incorporate selected options into API call | H | 1 | 1.5 | 1.5 |
-| Add content for instructions page | H | 1 | 1 | 1 |
-| Make Navbar dynamic using ReactStrap | H | 1 | 1 | INC |
-| Learn how to use Firebase | M | 4 | 3 | 3 |
-| Add submit your score form to end of game | M | 3 | 2 | 2 |
-| Create leaderboard, populate locally | M | 3 | 3 | 3 |
-| Update and populate leaderboard using Firebase | M | 3 | .5 | INC |
-| Create multiple leaderboards, based on selected difficulty | L | 3 | 0 | INC |
-| Additional styling for game (progress bar, etc.) | L | 4 | 5 | 5 |
-| Additional styling for Navbar, Footer, other pages | L | 4 | 9 | 9 |
-| Total | H | 45 | 44 | 44 |
+	Priority	Time estimated (Hours)	Time Spent (Hours)	Description
+initial page layout	High	1		to include basic layout of the webpage
+Navigation bar	High	1		Nav bar creation to show all links (unclickable at the moment)
+API call to all pages	High	10		there are 4 different API locations to call from 
+API call to main page	High	1		API call for civilization list, tech list, unit list, building list etc. 
+Applying Router	Medium	3		make each item in shown clickable
+Applying Context/props	Medium	5		identifying and applying calling/passing data
+Inidividual Unit Call	Medium	8		API call for individual properties, for example, properties for a Castle
+additional CSS	Medium	4		
+Manually writing Introduction/About/Ages	Low	5		
+Additional Time 	Low	10		To include time spent on things not on this list
+				
+				
+Total proposed time		48		
 
 ## Additional Libraries
 
