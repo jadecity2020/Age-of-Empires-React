@@ -81,18 +81,17 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-
-	Priority	Time estimated (Hours)	Time Spent (Hours)	Description
-initial page layout	High	1		to include basic layout of the webpage
-Navigation bar	High	1		Nav bar creation to show all links (unclickable at the moment)
-API call to all pages	High	10		there are 4 different API locations to call from 
-API call to main page	High	1		API call for civilization list, tech list, unit list, building list etc. 
-Applying Router	Medium	3		make each item in shown clickable
-Applying Context/props	Medium	5		identifying and applying calling/passing data
-Inidividual Unit Call	Medium	8		API call for individual properties, for example, properties for a Castle
-additional CSS	Medium	4		
-Manually writing Introduction/About/Ages	Low	5		
-Additional Time 	Low	10		To include time spent on things not on this list
+Task			|Priority	|Estimated Timing 	|Actual Time	|Description
+------------------------|---------------|-----------------------|---------------|--------------------------------------------------------------------------
+initial page layout	|High		|1			|		|to include basic layout of the webpage
+Navigation bar		|High		|1			|		|Nav bar creation to show all links (unclickable at the moment)
+API call to all pages	|High		|10			|		|there are 4 different API locations to call from 
+API call to main page	|High		|1			|		|API call for civilization list, tech list, unit list, building list etc. 
+Applying Router		|Medium		|3			|		|make each item in shown clickable
+Applying Context/props	|Medium		|5			|		|identifying and applying calling/passing data
+Inidividual Unit Call	|Medium		|8			|		|API call for individual properties, for example, properties for a Castle
+additional CSS		|Medium		|4			|		|Manually writing Introduction/About/Ages	Low	5		
+Additional Time 	|Low		|10			|		|To include time spent on things not on this list
 				
 				
 Total proposed time		48		
