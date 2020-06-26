@@ -50,13 +50,13 @@ https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations
 #### MVP EXAMPLE
 - Detailed Introduction on the game "Age of Empires II" 
 - Navbar with options that link to their corresponding pages
-- Implementing at least 10 civilizations (out of a total of 18)
+- Implementing Civilization Overview and Units overview
 - Application of API calls on the corresponding pages
 
 
 #### PostMVP EXAMPLE
 
-- Implement all 18 civilizations
+- Implement Units, Technology, and Buildings
 
 
 ## Components
