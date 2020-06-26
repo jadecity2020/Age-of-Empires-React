@@ -11,7 +11,7 @@ For this project, I plan to make a multiple-choice trivia game. I will use React
 
 ## API
 
-https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations
+https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations
 
 
 ```
