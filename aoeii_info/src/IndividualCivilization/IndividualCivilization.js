@@ -23,7 +23,6 @@ function IndividualCivilization (props){
         }
         makeAPICall()
     },[props.civName] )
-    console.log(civDetail)
     let displayCivTeamBonus = <h1>loading</h1>;
     if (civTeamBonus[0]) {
       displayCivTeamBonus = civTeamBonus.map((bonus) => {

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&family=UnifrakturMaguntia&display=swap');
+/* font-family: 'Shojumaru', cursive;
+font-family: 'UnifrakturMaguntia', cursive; */
+
+.Unit-units{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-family: 'Shojumaru', cursive;
+}
