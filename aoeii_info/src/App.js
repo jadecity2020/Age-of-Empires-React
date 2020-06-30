@@ -5,17 +5,13 @@ import {Route, Link} from 'react-router-dom'
 import Civilization from './Civilzation/Civilization';
 import IndividualCivilization from './IndividualCivilization/IndividualCivilization';
 import IndividualUnits from './IndividualUnits/IndividualUnits'
+import IndividualBldg from './IndividualBldg/IndividualBldg'
 import Units from './Units/Units'
+import Buildings from './Buildings/Buildings'
 
 // export const dataContext = createContext();
 
-function App() {
-const [civName, setCivName]= useState('')
-const [unitName, setUnitName]= useState('')
-
-const handleCivName = name => (setCivName(name))
-const handleUnitName = name => (setUnitName(name))
-  
+function App() {  
   return (
     <div className="App">
       {/* <dataContext.Provider value={ {handleCivName, handleUnitName, civName, unitName} }> */}
@@ -27,7 +23,7 @@ const handleUnitName = name => (setUnitName(name))
             <ul className='navbar-selection'>
               <Link to='/Civilization'><li>Civilization</li></Link>
               <Link to='/Units'><li>Units</li></Link>
-              <li>Buildings</li>
+              <Link to='/Buildings'><li>Buildings</li></Link>
               <li>Technology</li>
               <li>Ages</li>
               <li>About</li>
@@ -40,15 +36,16 @@ const handleUnitName = name => (setUnitName(name))
         <Route exact path='/Civilization/:civlization'
           render={ (props)=>
           <IndividualCivilization {...props}
-          civName={civName}
-          handleCivName={handleCivName}
           />}/>
         <Route exact path='/Units' component={Units}/>
         <Route exact path='/Units/:unit'
           render={ (props)=>
           <IndividualUnits {...props}
-          unitName={unitName}
-          handleUnitName={handleUnitName}
+          />}/>
+        <Route exact path='/Buildings' component={Buildings} />
+        <Route exact path='/Buildings/:bldg'
+          render={ (props)=>
+          <IndividualBldg {...props}
           />}/>
         {/* </dataContext.Provider> */}
       </main>

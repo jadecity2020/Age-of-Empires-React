@@ -9,9 +9,8 @@ function IndividualCivilization (props){
     const [civUniqueTech, setCivUniqueTech]=useState([])
     // const DataContext = useContext(dataContext);
     // console.log("Datacontext", DataContext);
-    props.handleCivName(props.match.params.civlization)
     useEffect( ()=>{
-        let IndCivURL=`https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/${props.civName}`
+        let IndCivURL=`https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/${props.match.params.civlization}`
             const makeAPICall= async()=>{
             const res = await fetch(IndCivURL)
             const json = await res.json()
@@ -22,7 +21,7 @@ function IndividualCivilization (props){
             setCivUniqueTech(json.unique_tech)
         }
         makeAPICall()
-    },[props.civName] )
+    },[props.match.params.civlization] )
     let displayCivTeamBonus = <h1>loading</h1>;
     if (civTeamBonus[0]) {
       displayCivTeamBonus = civTeamBonus.map((bonus) => {

@@ -6,8 +6,9 @@ function IndividualUnits (props){
     const [unitCost, setUnitCost]= useState({})
     const [unitAttackBonus, setUnitAttackBonus]=useState([])
 
+    props.handleUnitName(props.match.params.unit)
     useEffect( ()=>{
-        let IndUnitURL=`https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/unit/${props.match.params.unit}`
+        let IndUnitURL=`https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/unit/${props.unitName}`
             const makeAPICall= async()=>{
             const res = await fetch(IndUnitURL)
             const json = await res.json()
@@ -16,7 +17,7 @@ function IndividualUnits (props){
             setUnitCost(json.cost)
         }
         makeAPICall()
-    },[props.match.params.unit] )
+    },[props.unitName] )
 
     // let displayUnitAttackBonus = <h1>loading</h1>;
     // if (unitAttackBonus[0]) {
@@ -27,13 +28,13 @@ function IndividualUnits (props){
     let displayUnitCost=<p>Loading Cost</p>
     if(unitCost){
     if(!unitCost.Food){
-      displayUnitCost=<p>Cost- Wood: {unitCost.Wood} Gold: {unitCost.Gold}</p>
+      displayUnitCost=<p>Wood: {unitCost.Wood} Gold: {unitCost.Gold}</p>
     } else if (!unitCost.Wood){
-      displayUnitCost=<p>Cost- Food: {unitCost.Food} Gold: {unitCost.Gold}</p>
+      displayUnitCost=<p>Food: {unitCost.Food} Gold: {unitCost.Gold}</p>
     } else if (!unitCost.Gold){
-      displayUnitCost=<p>Cost- Food: {unitCost.Food} Wood: {unitCost.Wood}</p>
+      displayUnitCost=<p>Food: {unitCost.Food} Wood: {unitCost.Wood}</p>
     } else {
-      displayUnitCost=<p>Cost- Food: {unitCost.Food} Wood: {unitCost.Wood} Gold: {unitCost.Gold}</p>
+      displayUnitCost=<p>Food: {unitCost.Food} Wood: {unitCost.Wood} Gold: {unitCost.Gold}</p>
     }
   }
     

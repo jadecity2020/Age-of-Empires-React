@@ -2,15 +2,7 @@
 /* font-family: 'Shojumaru', cursive;
 font-family: 'UnifrakturMaguntia', cursive; */
 
-.Unit-units{
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.civ-bonus {
     font-family: 'Shojumaru', cursive;
+    text-align: center;
 }
-
-@media screen and (min-width: 768px) {
-    .Unit-units{
-        grid-template-columns: repeat(6,1fr);
-    }    
-  }

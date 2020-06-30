@@ -10,6 +10,7 @@ font-family: 'UnifrakturMaguntia', cursive; */
   font-family: 'Shojumaru', cursive;;
   display: flex;
   flex-direction: column;
+  border: 3px solid white
 }
 
 .navbar-selection {
@@ -33,5 +34,4 @@ a{
     justify-content: space-around;
     margin: 20px;
   }
-
 }

@@ -14,25 +14,24 @@ function Civilization () {
             let res = await fetch(civURL);
             let json = await res.json();
             setCivList(json.civilizations)
+            console.log(json)
         };
         makeAPICallCiv()
     },[])  
 
       let allCiv=civList.map( (item, index)=>{
           return(
-            <p className='Civ-ind-civ' key={index}>
+            <h2 className='Civ-ind-civ' key={index}>
             <Link to={'/Civilization/'+item.name}>
                 {item.name}
             </Link>
-            </p>
+            </h2>
           )
       })
-
       return (
           <div className='Civ-civ'>
               {allCiv}
           </div>
       )
 }
-
 export default Civilization
