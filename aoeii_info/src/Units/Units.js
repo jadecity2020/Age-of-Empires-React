@@ -5,9 +5,9 @@ import './Units.css'
 function Units (){
     const [unitList,setUnitList] = useState([])
     useEffect( ()=>{
-        let civURL='https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/units'
+        let unitURL='https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/units'
         const makeAPICallUnit = async () => {
-            let res = await fetch(civURL);
+            let res = await fetch(unitURL);
             let json = await res.json();
             setUnitList(json.units)
         };

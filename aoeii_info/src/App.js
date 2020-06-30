@@ -8,10 +8,14 @@ import IndividualUnits from './IndividualUnits/IndividualUnits'
 import IndividualBldg from './IndividualBldg/IndividualBldg'
 import Units from './Units/Units'
 import Buildings from './Buildings/Buildings'
+import Tech from './Tech/Tech'
+import IndividualTech from './IndividualTech/IndividualTech'
 
 // export const dataContext = createContext();
 
 function App() {  
+  const[bldgName,setBldgName]=useState('')
+  const handleBldgName=name=>setBldgName(name)
   return (
     <div className="App">
       {/* <dataContext.Provider value={ {handleCivName, handleUnitName, civName, unitName} }> */}
@@ -24,7 +28,7 @@ function App() {
               <Link to='/Civilization'><li>Civilization</li></Link>
               <Link to='/Units'><li>Units</li></Link>
               <Link to='/Buildings'><li>Buildings</li></Link>
-              <li>Technology</li>
+              <Link to='/Technology'><li>Technology</li></Link>
               <li>Ages</li>
               <li>About</li>
             </ul>
@@ -46,6 +50,15 @@ function App() {
         <Route exact path='/Buildings/:bldg'
           render={ (props)=>
           <IndividualBldg {...props}
+          handleBldgName={handleBldgName}
+          bldgName={bldgName}
+          />}/>
+        <Route exact path='/Technology' component={Tech} />
+        <Route exact path='/Technology/:tech'
+          render={ (props)=>
+          <IndividualTech {...props}
+          // handleBldgName={handleBldgName}
+          // bldgName={bldgName}
           />}/>
         {/* </dataContext.Provider> */}
       </main>

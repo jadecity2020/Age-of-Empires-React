@@ -2,7 +2,7 @@
 /* font-family: 'Shojumaru', cursive;
 font-family: 'UnifrakturMaguntia', cursive; */
 
-.Unit-units{
+.techs{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -10,7 +10,7 @@ font-family: 'UnifrakturMaguntia', cursive; */
 }
 
 @media screen and (min-width: 768px) {
-    .Unit-units{
+    .techs{
         grid-template-columns: repeat(6,1fr);
     }    
   }

@@ -1,32 +1,31 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import './Units.css'
+import './Tech.css'
 
-function Units (){
-    const [unitList,setUnitList] = useState([])
+function Tech (){
+    const [techList,setTechList] = useState([])
     useEffect( ()=>{
-        let civURL='https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/units'
+        let techURL='https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/technologies'
         const makeAPICallUnit = async () => {
-            let res = await fetch(civURL);
+            let res = await fetch(techURL);
             let json = await res.json();
-            setUnitList(json.units)
+            setTechList(json.technologies)
         };
         makeAPICallUnit()
     },[])  
-    let allUnits=unitList.map( (item, index)=>{
+    let allTechs=techList.map( (item, index)=>{
         return(
-          <p className='Unit-ind-civ' key={index}>
-          <Link to={'/Units/'+item.name}>
+          <p className='ind-tech' key={index}>
+          <Link to={'/Technology/'+item.name}>
               {item.name}
           </Link>
           </p>
         )
     })
     return(
-        <div className='Unit-units'>
-        {allUnits}
+        <div className='techs'>
+        {allTechs}
     </div>
     )
 }
-
-export default Units
+export default Tech

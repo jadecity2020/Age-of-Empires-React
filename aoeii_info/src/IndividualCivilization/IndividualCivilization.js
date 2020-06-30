@@ -14,7 +14,6 @@ function IndividualCivilization (props){
             const makeAPICall= async()=>{
             const res = await fetch(IndCivURL)
             const json = await res.json()
-            console.log('civ API call',json)
             setCivDetail(json)
             setCivTeamBonus(json.civilization_bonus)
             setCivUniqueUnit(json.unique_unit)

@@ -14,7 +14,6 @@ function Buildings () {
             let res = await fetch(bldgURL);
             let json = await res.json();
             setBldgList(json.structures)
-            console.log(json)
         };
         makeAPICallBldg()
     },[])  
