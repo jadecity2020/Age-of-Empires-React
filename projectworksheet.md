@@ -64,37 +64,35 @@ https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/a
 Haven't edit this portion but left here as reference
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-| Component | Description | 
-| --- | :---: |  
-| App | Sets up app with React Router | 
-| Header | Renders the header, including the nav | 
-| Footer | Renders the footer |
-| Main | Contains Switch/Routes for content |
-| Gameboard | Renders the trivia game, contains score as state |
-| Question | Renders current question via API call and Answer components |
-| Answer | Renders a possible answer using props from Question |
-| Score | Renders player's score received through props |
-| HighScore | Form that renders at end of game if the player achieves a high score |
-| Options | Renders a form of selectable game options |
-| Instructions | Renders rules and info about the game |
-| Leaderboard | Renders list of top scorers via API call |
+| Component 		| Description | 
+| --- 			| :---: |  
+| App 			| Sets up app with React Router | 
+| Civilizations 	| Renders the the entire list of civilizations via API call  | 
+| Individual Civs 	| Contains individual Civilization properties |
+| Units 		| Renders the the entire list of Units via API call  |
+| Individual Units 	| Contains individual Unit properties |
+| Technology		| Renders the the entire list of Technologies via API call  |
+| Individual Techs 	| Contains individual Technology properties |
+| Buildings 		| Renders the the entire list of Buildings via API call |
+| Individual Bldg 	| Contains individual Building properties |
+| Ages 			| Renders information about the 4 different Ages|
+| About 		| Renders info about the game |
+
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 Task			|Priority	|Estimated Timing 	|Actual Time	|Description
 ------------------------|---------------|-----------------------|---------------|--------------------------------------------------------------------------
-initial page layout	|High		|1			|		|to include basic layout of the webpage
-Navigation bar		|High		|1			|		|Nav bar creation to show all links (unclickable at the moment)
-API call to all pages	|High		|10			|		|there are 4 different API locations to call from 
-API call to main page	|High		|1			|		|API call for civilization list, tech list, unit list, building list etc. 
-Applying Router		|Medium		|3			|		|make each item in shown clickable
-Applying Context/props	|Medium		|5			|		|identifying and applying calling/passing data
-Inidividual Unit Call	|Medium		|8			|		|API call for individual properties, for example, properties for a Castle
+initial page layout	|High		|1			|	1	|to include basic layout of the webpage
+Navigation bar		|High		|1			|	1	|Nav bar creation to show all links (unclickable at the moment)
+API call to all pages	|High		|10			|	10	|there are 4 different API locations to call from 
+API call to main page	|High		|1			|	2	|API call for civilization list, tech list, unit list, building list etc. 
+Applying Router		|Medium		|3			|	2	|make each item in shown clickable
+Applying Context/props	|Medium		|5			|	2	|identifying and applying calling/passing data
+Inidividual Unit Call	|Medium		|8			|	5	|API call for individual properties, for example, properties for a Castle
 additional CSS		|Medium		|4			|		|Manually writing Introduction/About/Ages	Low	5		
-Additional Time 	|Low		|10			|		|To include time spent on things not on this list
-				
-				
-Total proposed time		48		
+Additional Time 	|Low		|10			|		|To include time spent on things not on this list			
+Total proposed time	|		|48			|	23	|API calls were very successful and didn't take as much time		
 
 ## Additional Libraries
 
