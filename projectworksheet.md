@@ -40,6 +40,10 @@ https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/a
 
 
 ## Wireframes
+FlowChart: https://res.cloudinary.com/jadecity2020/raw/upload/v1593639169/Flow_Chart_jerecr.sketch
+
+Component: https://res.cloudinary.com/jadecity2020/raw/upload/v1593639165/Homepage_ktr80j.sketch
+           https://res.cloudinary.com/jadecity2020/raw/upload/v1593639173/Units_jni6tt.sketchx
 
 
 
