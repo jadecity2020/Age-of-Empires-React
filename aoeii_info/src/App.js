@@ -10,6 +10,8 @@ import Units from './Units/Units'
 import Buildings from './Buildings/Buildings'
 import Tech from './Tech/Tech'
 import IndividualTech from './IndividualTech/IndividualTech'
+import Ages from './Ages/Ages'
+import About from './About/About'
 
 // export const dataContext = createContext();
 
@@ -29,8 +31,8 @@ function App() {
               <Link to='/Units'><li>Units</li></Link>
               <Link to='/Buildings'><li>Buildings</li></Link>
               <Link to='/Technology'><li>Technology</li></Link>
-              <li>Ages</li>
-              <li>About</li>
+              <Link to='/Ages'><li>Ages</li></Link>
+              <Link to='/About'><li>About</li></Link>
             </ul>
         </nav>   
       </div>
@@ -60,6 +62,8 @@ function App() {
           // handleBldgName={handleBldgName}
           // bldgName={bldgName}
           />}/>
+          <Route exact path='/Ages' component={Ages} />
+          <Route exact path='/About' component={About} />
         {/* </dataContext.Provider> */}
       </main>
     </div>

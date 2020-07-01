@@ -1,14 +1,14 @@
 import React from 'react'
-import './Introduction.css'
+import './Ages.css'
 
-function Introduction(){
+function Ages(){
     return(
-        <div className='Intro'>
-        <h1 className='intro1'>Collect Resources</h1>
-        <h1 className='intro2'>Train Your Soldiers</h1>
-        <h1 className='intro3'>Conquer Your Enemies</h1>
-        <h1 className='intro4'>Build Your Empire!</h1>
+        <div className='About'>
+        <h1 className='dark'>Dark Age: Hunter and Gatherer Phase</h1>
+        <h1 className='feudal'>Feudual Age: Farming and Mining Phase</h1>
+        <h1 className='castle'>Castle Age: Training and Deployment Phase</h1>
+        <h1 className='imperial'>Imperial Age: I come, I see, I CONQUER!</h1>
         </div>
     )
 }
-export default Introduction
+export default Ages
