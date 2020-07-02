@@ -6,7 +6,7 @@
 
 ## Project Description
 
-For this project, I plan to make a multiple-choice trivia game. I will use React's Link and Source to provide access to instructions, the game itself, and a leaderboard. The questions and possible answers will be populated using an API call. The leaderboard will be stored on a Google Sheet and also viewed through an API call.
+For this project, I plan to make a information website for the game Age of Empires II: The Conquerors. This website will contain all the civilizations information, as well as unit and technology information that is in the games. 
 
 ## API
 
