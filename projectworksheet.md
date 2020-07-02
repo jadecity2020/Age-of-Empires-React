@@ -2,7 +2,6 @@
 
 ## Project Links
 
-- https://github.com/adgreenie/react.git
 - https://jadecity2020.github.io/AOE2-React/
 
 ## Project Description
