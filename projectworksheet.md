@@ -94,7 +94,8 @@ API call to main page	|High		|1			|	2	|API call for civilization list, tech list
 Applying Router		|Medium		|3			|	2	|make each item in shown clickable
 Applying Context/props	|Medium		|5			|	2	|identifying and applying calling/passing data
 Inidividual Unit Call	|Medium		|8			|	5	|API call for individual properties, for example, properties for a Castle
-additional CSS		|Medium		|4			|		|Manually writing Introduction/About/Ages	Low	5		
+additional CSS		|Medium		|4			|		
+|Manually writing	|Low	|5		|5|
 Additional Time 	|Low		|10			|		|To include time spent on things not on this list			
 Total proposed time	|		|48			|	23	|API calls were very successful and didn't take as much time		
 
